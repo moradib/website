@@ -8,8 +8,8 @@ export default function Home() {
     <>
       <PageHead />
       <HeroSection />
-      <AboutSection />
-      <IndustrySection />
+      {/* <AboutSection />
+      <IndustrySection /> */}
     </>
   );
 }

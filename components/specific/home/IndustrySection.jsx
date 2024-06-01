@@ -1,4 +1,9 @@
 import React from 'react'
+import { BsCameraReels, BsShop } from "react-icons/bs"
+import { FaBitcoin, FaChalkboardTeacher } from 'react-icons/fa'
+import { BsCashCoin, BsFillBuildingsFill } from "react-icons/bs"
+import { MdOutlineSupportAgent } from "react-icons/md"
+import { TbSeo } from "react-icons/tb"
 
 const IndustrySection = () => {
     return (
@@ -6,43 +11,26 @@ const IndustrySection = () => {
             <section className="industries-serve-area pt-100 pb-0">
                 <div className="container">
                     <div className="section-title">
-                        <span>What We Offer</span>
-                        <h2>Industries We Serve</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates magni fugit, quod iure quibusdam, omnis nisi cum, nostrum nulla deleniti mollitia tenetur.</p>
+                        <h2 className='h2-title' data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">زمینه‌های فعالیت</h2>
+                        <p data-aos="fade" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="300">شرکت <strong>گونش بیلگی سایار</strong> با اتکا به تیمی مجرب، پروژه‌های موفقی را در زمینه‌های مختلف توسعه داده و منتشر کرده است.</p>
                     </div>
                     <div className="grid grid-cols-3">
-                        <div className="">
-                            <div className="col-lg-12 col-md-6">
-                                <div className="single-industries aos-init aos-animate" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="100">
-                                    <i className="flaticon-machine-learning"></i>
-                                    <h3>Heavy Industry</h3>
-                                    <span>All kind of industry</span>
-
-                                </div>
+                        <div className="flex flex-col gap-2 items-end">
+                            <div className="single-industries flex items-center" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="100">
+                                <BsCameraReels className='industry-icon' />
+                                <h3 className='font-bold'>دوربین‌های هوشمند</h3>
                             </div>
-                            <div className="col-lg-12 col-md-6">
-                                <div className="single-industries aos-init aos-animate" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="200">
-                                    <i className="flaticon-artificial-intelligence"></i>
-                                    <h3>Transportation</h3>
-                                    <span>All kind of industry</span>
-
-                                </div>
+                            <div className="single-industries flex items-center" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="200">
+                                <BsCashCoin className='industry-icon' />
+                                <h3 className='font-bold'>حسابداری</h3>
                             </div>
-                            <div className="col-lg-12 col-md-6">
-                                <div className="single-industries aos-init aos-animate" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="300">
-                                    <i className="flaticon-health"></i>
-                                    <h3>Health Care</h3>
-                                    <span>All kind of industry</span>
-
-                                </div>
+                            <div className="single-industries flex items-center" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="300">
+                                <FaBitcoin className='industry-icon' />
+                                <h3 className='font-bold'>صرافی ارزهای دیجیتال</h3>
                             </div>
-                            <div className="col-lg-12 col-md-6">
-                                <div className="single-industries aos-init" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="900">
-                                    <i className="flaticon-automation"></i>
-                                    <h3>Manufacturing</h3>
-                                    <span>All kind of industry</span>
-
-                                </div>
+                            <div className="single-industries flex items-center aos-init" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="900">
+                                <BsFillBuildingsFill  className='industry-icon' />
+                                <h3 className='font-bold'>مدیریت مجتمع</h3>
                             </div>
                         </div>
                         <div className="">
@@ -50,26 +38,22 @@ const IndustrySection = () => {
                                 <img src="/images/homePage/offer1.png" alt="Image" />
                             </div>
                         </div>
-                        <div className="grid grid-cols-1">
-                            <div className="single-industries right-item aos-init aos-animate" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="500">
-                                <i className="flaticon-choice"></i>
-                                <h3>Logistic</h3>
-                                <span>All kind of industry</span>
+                        <div className="flex flex-col gap-2 items-start">
+                            <div className="single-industries flex items-center right-item" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="500">
+                                <BsShop className='industry-icon' />
+                                <h3 className='font-bold'>فروشگاه آنلاین</h3>
                             </div>
-                            <div className="single-industries right-item aos-init aos-animate" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="600">
-                                <i className="flaticon-deep-learning"></i>
-                                <h3>Real Estate</h3>
-                                <span>All kind of industry</span>
+                            <div className="single-industries flex items-center right-item" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="600">
+                                <MdOutlineSupportAgent className='industry-icon' />
+                                <h3 className='font-bold'>مشاوره</h3>
                             </div>
-                            <div className="single-industries right-item aos-init aos-animate" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="700">
-                                <i className="flaticon-cyber-security"></i>
-                                <h3>Banking</h3>
-                                <span>All kind of industry</span>
+                            <div className="single-industries flex items-center right-item" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="700">
+                                <TbSeo className='industry-icon' />
+                                <h3 className='font-bold'>سئو و تولید محتوا</h3>
                             </div>
-                            <div className="single-industries right-item aos-init" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="800">
-                                <i className="flaticon-blockchain"></i>
-                                <h3>Automobile</h3>
-                                <span>All kind of industry</span>
+                            <div className="single-industries flex items-center right-item" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="800">
+                                <FaChalkboardTeacher className='industry-icon' />
+                                <h3 className='font-bold'>دوره‌های آموزشی</h3>
                             </div>
                         </div>
                     </div>

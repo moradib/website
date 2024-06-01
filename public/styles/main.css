@@ -5,6 +5,7 @@
 /* colors */
 :root {
   --main-farsi: "iransans";
+  --bold-farsi: "iransans-bold";
   --main-blue: #00095a;
   --dark-blue: #00052f;
 }
@@ -77,7 +78,8 @@ body {
 .main-banner-area .banner-text h1 {
   color: #fff;
   font-size: 50px;
-  margin-bottom: 32px
+  margin-bottom: 32px;
+  font-family: var(--bold-farsi);
 }
 
 .main-banner-area .banner-text p {

@@ -23771,7 +23771,7 @@ textarea.form-control {
     padding: 30px 30px 30px 85px
 }
 
-.industries-area .industries-list-tab .tabs li:before {
+.industries-area .industries-list-tab .tabs li::before {
     content: "";
     position: absolute;
     top: 0;
@@ -23820,7 +23820,7 @@ textarea.form-control {
     right: 20px
 }
 
-.industries-area .industries-list-tab .tabs li:hover:before {
+.industries-area .industries-list-tab .tabs li:hover::before {
     width: 100%;
     border-radius: 60px 0 0 60px
 }
@@ -24418,6 +24418,7 @@ textarea.form-control {
 }
 
 .single-industries {
+    width: 300px;
     position: relative;
     background-color: #fff;
     box-shadow: 0 0 20px 3px rgba(0, 0, 0, .05);
@@ -24426,16 +24427,10 @@ textarea.form-control {
     z-index: 1;
     margin-bottom: 20px;
     padding: 20px 20px 20px 60px;
-    border-radius: 10px 60px 60px 10px;
-    
-    &.right-item {
-        border-radius: 60px 0 0 60px;
-    }
 }
 
 .single-industries.right-item,
-.single-industries.right-item:before,
-.single-industries.right-item:hover:before {
+.single-industries.right-item:hover::before {
     border-radius: 60px 10px 10px 60px;
 }
 
@@ -24448,41 +24443,42 @@ textarea.form-control {
     height: 100%;
     background-color: #1dd3f8;
     z-index: -1;
-    border-radius: 60px 0 0 60px;
-    transition: all .6s ease
+    border-radius: 10px 60px 60px 10px;
+    transition: all .6s ease;
+}
+
+.single-industries:not(.right-item),
+.single-industries:not(.right-item):hover::before {
+    border-radius: 10px 60px 60px 10px;
 }
 
 .single-industries.right-item::before {
     left: unset;
-    border-radius: 0 60px 60px 0;
+    border-radius: 60px 10px 10px 60px;
     right: 0;
 }
 
-.single-industries i {
+.single-industries .industry-icon {
     position: absolute;
-    left: 30px;
-    top: 35px;
-    font-size: 40px;
+    top: 50%;
+    left: 25px;
+    transform-origin: center;
+    transform: rotate(0) translateY(-50%);
+    font-size: 30px;
     color: #1dd3f8;
     line-height: 1;
-    transition: all .6s ease
+    transition: all .6s ease;
 }
 
 .single-industries h3 {
-    transition: all .6s ease
-}
-
-.single-industries span {
-    margin-bottom: -3px;
-    display: block;
-    font-weight: 600;
     transition: all .6s ease;
-    color: #4d4d4d
+    font-family: var(--main-farsi);
+    font-size: 18px;
 }
 
-.single-industries:hover i {
+.single-industries:hover .industry-icon {
     color: #fff;
-    transform: rotate(1turn)
+    transform: rotate(1turn) translateY(-50%);
 }
 
 .single-industries:hover h3,
@@ -27007,7 +27003,7 @@ textarea.form-control {
 
     .main-banner-area .banner-text h1 {
         font-size: 30px;
-        margin-bottom: 20px
+        margin-bottom: 20px;
     }
 
     .main-banner-area .banner-text p {
@@ -28713,11 +28709,7 @@ textarea.form-control {
     }
 
     .single-industries h3 {
-        font-size: 18px
-    }
-
-    .single-industries i {
-        left: 25px
+        font-size: 18px;
     }
 
     .service-sidebar-area .service-details-title,

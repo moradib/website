@@ -29,7 +29,7 @@ const AboutSection = () => {
                                 </div>
                             </div>
                         </div>
-                        <a className="default-btn flex-center w-[180px] mt-10" href="/about" data-aos="zoom-in" data-aos-delay="1500" data-aos-duration="1000">موارد بیشتر</a>
+                        <a className="default-btn flex-center w-[180px] mt-10" href="/about" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000">موارد بیشتر</a>
                     </div>
                 </div>
             </section>
