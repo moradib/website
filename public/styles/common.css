@@ -1,0 +1,74 @@
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h2-title {
+    font-weight: 800;
+    font-size: 30px;
+    text-shadow: 1px 1px 10px #a4a4a4;
+}
+
+/* btn start */
+
+.default-btn {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    padding: 18px 15px;
+    transition: all .6s ease;
+    z-index: 1;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #19c1e3;
+    height: 40px;
+}
+
+.default-btn:before {
+    left: -40px
+}
+
+.default-btn:after,
+.default-btn:before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    width: 10px;
+    height: 100px;
+    background-color: #fff;
+    opacity: .5;
+    transition: all .6s ease;
+    transform: rotate(45deg)
+}
+
+.default-btn:after {
+    right: -40px
+}
+
+.default-btn.active {
+    background-color: #fff;
+    color: #1dd3f8
+}
+
+.default-btn.active:hover {
+    color: #fff;
+    background-color: #1dd3f8
+}
+
+.default-btn:hover {
+    color: #fff;
+    transition: all .6s ease
+}
+
+.default-btn:hover:before {
+    left: 200px
+}
+
+.default-btn:hover:after {
+    right: 200px
+}
+
+/* btn end  */
