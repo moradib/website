@@ -40,6 +40,23 @@ body {
   font-family: var(--main-farsi);
 }
 
+.responsive-menu-container {
+  width: 100%;
+  background-color: #00053686;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    backdrop-filter: blur(8px);
+  transition: .7s;
+
+  &.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+.responsive-menu-container .responsive-menu-inner {
+  position: absolute;
+  background-color: #00052f;
+}
+
 /* hero section start */
 .main-banner-area {
   background-image: linear-gradient(#00095e, #000638);

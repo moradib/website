@@ -6,8 +6,6 @@ const HeroSection = () => {
 
     const { width } = useWindowSize();
 
-    console.log(width)
-
     return (
         <>
             <div className="main-banner-area main-banner-area-three">
