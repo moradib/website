@@ -16,9 +16,9 @@ const HeroSection = () => {
                         <div className="banner-text mr-0 md:mr-16 flex items-center flex-col">
                             <h1 className='font-extrabold cursor-default' data-aos="fade-down" data-aos-duration="1200" data-aos-delay="200">گونش بیلگی سایار</h1>
                             <div className="flex items-center md:items-start flex-col gap-3 px-5 my-10">
-                                <p className='m-0' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">ارائه انواع خدمات طراحی و توسعه وب سایت های اختصاصی با تکنولوژی های روز دنیا</p>
-                                <p className='m-0' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1300">ایجاد سیستم های هوش مصنوعی برای انواع کسب و کارها</p>
-                                <p className='m-0' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1600">ارائه خدمات سئو و تولید محتوا</p>
+                                <p className='m-0 md:text-[16px] text-[8px]' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">ارائه انواع خدمات طراحی و توسعه وب سایت های اختصاصی با تکنولوژی های روز دنیا</p>
+                                <p className='m-0 md:text-[16px] text-[8px]' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1300">ایجاد سیستم های هوش مصنوعی برای انواع کسب و کارها</p>
+                                <p className='m-0 md:text-[16px] text-[8px]' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1600">ارائه خدمات سئو و تولید محتوا</p>
                             </div>
                             <div className="flex-center gap-2" data-aos="fade-down" data-aos-duration="1200"
                                 data-aos-delay="400">
