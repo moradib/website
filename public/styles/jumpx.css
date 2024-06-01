@@ -23124,10 +23124,6 @@ textarea.form-control {
     margin-right: 0
 }
 
-.main-banner-area .banner-main-img {
-    display: none
-}
-
 .main-banner-area .white-shape {
     position: absolute;
     bottom: 0;
@@ -25009,7 +25005,6 @@ textarea.form-control {
 .jumpx-slider-item .jumpx-slider-text h1 {
     font-size: 70px;
     color: #fff;
-    margin-bottom: 30px
 }
 
 .jumpx-slider-item .jumpx-slider-text p {
@@ -26864,7 +26859,7 @@ textarea.form-control {
 
 .text-container h1 {
     font-size: 40px;
-    margin-bottom: 15px
+    margin-bottom: 15px;
 }
 
 .text-container h2 {
@@ -27014,11 +27009,6 @@ textarea.form-control {
     .main-banner-area .banner-text .banner-btn .default-btn {
         margin-right: 5px;
         margin-left: 5px
-    }
-
-    .main-banner-area .banner-main-img {
-        display: block;
-        margin-top: 30px
     }
 
     .main-banner-area.main-banner-area-one .banner-text {
@@ -28120,11 +28110,6 @@ textarea.form-control {
         margin-bottom: 30px
     }
 
-    .main-banner-area .banner-main-img {
-        display: block;
-        margin-top: 30px
-    }
-
     .main-banner-area.main-banner-area-one .banner-text {
         max-width: unset;
         margin-left: unset;
@@ -28459,10 +28444,6 @@ textarea.form-control {
         padding-bottom: 100px
     }
 
-    .main-banner-area-three .banner-main-img {
-        margin-top: 50px
-    }
-
     .jumpx-slider-item {
         height: 100%;
         padding-top: 200px;
@@ -28658,7 +28639,6 @@ textarea.form-control {
 
     .main-banner-area .banner-text h1 {
         font-size: 40px;
-        margin-bottom: 30px
     }
 
     .main-banner-area .banner-text p {

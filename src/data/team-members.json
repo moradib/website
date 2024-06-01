@@ -1,0 +1,155 @@
+[
+    {
+        "name": "بهزاد",
+        "family": "مرادی",
+        "profile": "",
+        "position": "CEO",
+        "social_media": [
+            {
+                "name": "whatsapp",
+                "address_or_number": "https://wa.me/09144227402"
+            },
+            {
+                "name": "linkedin",
+                "address_or_number": "09144227402"
+            },
+            {
+                "name": "instagram",
+                "address_or_number": "https://www.instagram.com/behzad2moradi"
+            }
+        ],
+        "cv_address": ""
+    },
+    {
+        "name": "روشن",
+        "family": "گل‌محمدی",
+        "profile": "/images/team/gol-mohammadi.jpg",
+        "position": "مدیر فنی و هوش مصنوعی",
+        "social_media": [
+            {
+                "name": "telegram",
+                "address_or_number": "09350515733"
+            },
+            {
+                "name": "whatsapp",
+                "address_or_number": "09350515733"
+            },
+            {
+                "name": "github",
+                "address_or_number": "https://github.com/roshan-golmohammadi"
+            }
+        ],
+        "cv_address": "/assets/cv/gol-mohammadi.pdf"
+    },
+    {
+        "name": "سارا",
+        "family": "زرّین",
+        "profile": "",
+        "position": "توسعه‌دهندۀ فرانت‌اند",
+        "social_media": [],
+        "cv_address": ""
+    },
+    {
+        "name": "نوید",
+        "family": "صفایی مفدم",
+        "profile": "https://avatars.githubusercontent.com/u/103259478?v=4",
+        "position": "توسعه‌دهندۀ بک‌اند",
+        "social_media": [
+            {
+                "name": "telegram",
+                "address_or_number": "tg://resolve?domain=NaviD_Safaee"
+            },
+            {
+                "name": "email",
+                "address_or_number": "mailto:navid.safaee1381@gmail.com"
+            }
+        ],
+        "cv_address": "/assets/cv/navid_safaee.pdf"
+    },
+    {
+        "name": "زهرا",
+        "family": "علیزاده",
+        "profile": "",
+        "position": "مهندس یادگیری ماشین",
+        "social_media": [
+            {
+                "name": "linkedin",
+                "address_or_number": "https://www.linkedin.com/in/zahra-alizadeh-b33449205/"
+            },
+            {
+                "name": "github",
+                "address_or_number": "https://github.com/zahra-alizadeh"
+            },
+            {
+                "name": "email",
+                "address_or_number": "mailto:zahraalizadeh250@gmail.com"
+            }
+        ],
+        "cv_address": "/assets/cv/alizadeh.pdf"
+    },
+    {
+        "name": "زهرا",
+        "family": "قاسمی",
+        "profile": "",
+        "position": "برنامه‌نویس فرانت‌اند",
+        "social_media": [],
+        "cv_address": ""
+    },
+    {
+        "name": "فراز",
+        "family": "ملالو",
+        "profile": "https://www.karlancer.com/f/avatar/1694783835-n8Js.jpg",
+        "position": "برنامه‌نویس فرانت‌اند",
+        "social_media": [
+            {
+                "name": "telegram",
+                "address_or_number": "tg://resolve?domain=faraz_mollalou"
+            },
+            {
+                "name": "github",
+                "address_or_number": "https://github.com/farazmollalou"
+            },
+            {
+                "name": "whatsapp",
+                "address_or_number": "09929787657"
+            },
+            {
+                "name": "linkedin",
+                "address_or_number": "https://www.linkedin.com/in/"
+            }
+        ],
+        "cv_address": "/assets/cv/faraz.pdf"
+    },
+    {
+        "name": "ابوالفضل",
+        "family": "عابدی",
+        "profile": "",
+        "position": "هوش مصنوعی",
+        "social_media": [],
+        "cv_address": ""
+    },
+    {
+        "name": "روشنک",
+        "family": "عدل‌پور",
+        "profile": "",
+        "position": "طراح و برنامه‌نویس",
+        "social_media": [],
+        "cv_address": ""
+    },
+    {
+        "name": "محسن",
+        "family": "شیخ‌الاسلامی",
+        "profile": "",
+        "position": "مدیر بازرگانی",
+        "social_media": [],
+        "cv_address": "/assets/cv/sheikholeslami.pdf"
+    },
+    {
+        "name": "رضا",
+        "family": "قربانی",
+        "profile": "/images/team/reza.jpg",
+        "position": "اینترنت اشیا و الکترونیک",
+        "social_media": [],
+        "cv_address": ""
+    }
+]

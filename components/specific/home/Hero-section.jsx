@@ -1,15 +1,21 @@
 import React from 'react'
 import { FaPlay } from "react-icons/fa"
+import { useWindowSize } from 'react-use';
 
 const HeroSection = () => {
+
+    const { width } = useWindowSize();
+
+    console.log(width)
+
     return (
         <>
             <div className="main-banner-area main-banner-area-three">
-                <div className="grid grid-cols-2">
+                <div className="grid grid-cols-1 md:grid-cols-2">
                     <div>
-                        <div className="banner-text mr-16">
+                        <div className="banner-text mr-0 md:mr-16 flex items-center flex-col">
                             <h1 className='font-extrabold cursor-default' data-aos="fade-down" data-aos-duration="1200" data-aos-delay="200">گونش بیلگی سایار</h1>
-                            <div className="flex items-start flex-col gap-2 my-10">
+                            <div className="flex items-center md:items-start flex-col gap-3 px-5 my-10">
                                 <p className='m-0' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">ارائه انواع خدمات طراحی و توسعه وب سایت های اختصاصی با تکنولوژی های روز دنیا</p>
                                 <p className='m-0' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1300">ایجاد سیستم های هوش مصنوعی برای انواع کسب و کارها</p>
                                 <p className='m-0' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1600">ارائه خدمات سئو و تولید محتوا</p>
@@ -24,12 +30,8 @@ const HeroSection = () => {
                         </div>
                     </div>
                     <div>
-                        <div className="banner-main-img banner-one-main-img">
-                            <img src="/images/homePage/main-img3.png" alt="Image" />
-                        </div>
-                        <div className="banner-img">
-                            <img className="animate__animated animate__fadeInDown animate__fast" src="/images/homePage/shape1.png" alt="Image" />
-                            <img className="animate__animated animate__fadeInDown animate__fast" src="/images/homePage/shape2.png" alt="Image" />
+                        <div className="banner-main-img flex-center">
+                            <img src={width < 768 ? "/images/homePage/main-img2.png" : "/images/homePage/main-img1.png"} alt="Image" />
                         </div>
                     </div>
                 </div>

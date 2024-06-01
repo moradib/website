@@ -78,7 +78,7 @@ body {
 .main-banner-area .banner-text h1 {
   color: #fff;
   font-size: 50px;
-  margin-bottom: 32px;
+  margin-bottom: 0 !important;
   font-family: var(--bold-farsi);
 }
 
@@ -96,11 +96,274 @@ body {
   margin-right: 0
 }
 
-.main-banner-area .banner-main-img {
-  display: none
+@media (max-width: 768px) {
+  .main-banner-area .banner-main-img {
+    margin-top: 60px;
+  }
 }
 
 /* hero section end */
+
+/* team section: start */
+
+
+.team-area {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.team-area .team-title {
+  color: #001448;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.team-area-dark .team-title {
+  color: #fff;
+}
+
+.team-area .mySwiper {
+  width: 100%;
+  height: 390px;
+  padding-bottom: 30px;
+  position: relative;
+  padding-inline: 20px;
+}
+
+@media (min-width: 1000px) {
+  .team-area .mySwiper {
+    width: 80%;
+  }
+}
+
+@media (max-width: 700px) {
+  .team-area .team-title {
+    font-size: 18px;
+  }
+
+  .team-area .mySwiper {
+    width: 80%;
+  }
+}
+
+.team-area .mySwiper .swiper-card {
+  background-color: #cdcdcd;
+  width: 250px;
+  height: calc(90%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 3px 3px 20px 20px;
+  overflow: hidden;
+  transition: .5s;
+
+  &:hover {
+    box-shadow: 1px 1px 5px #fff7008e, -1px 1px 5px #fff7008e;
+  }
+}
+
+.team-area-dark .mySwiper .swiper-card {
+  background-color: #141629;
+}
+
+.team-area .mySwiper .swiper-card:hover .img-wrapper::before {
+  clip-path: circle(70% at 50% -50%);
+}
+
+.team-area .mySwiper .swiper-card:hover .img-wrapper img {
+  transform: translateY(-5px);
+}
+
+.team-area .mySwiper .swiper-card .img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #fff700;
+    z-index: 1;
+    clip-path: circle(0% at 50% -50%);
+    transition: .5s;
+  }
+}
+
+.team-area .mySwiper .swiper-card .img-wrapper .user-icon {
+  width: 80px;
+  height: 80px;
+  z-index: 2;
+  transform: translateY(20px);
+  transition: .5s;
+}
+
+.team-area .mySwiper .swiper-card:hover .img-wrapper .user-icon {
+  transform: translateY(-5px);
+}
+
+.team-area .mySwiper .swiper-card .img-wrapper img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  z-index: 2;
+  transform: translateY(20px);
+  transition: .5s;
+}
+
+.team-area .mySwiper .swiper-pagination-bullets {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.team-area .mySwiper .swiper-pagination-bullets .swiper-pagination-bullet {
+  background-color: #000b6e;
+}
+
+.team-area-dark .mySwiper .swiper-pagination-bullets .swiper-pagination-bullet {
+  background-color: #a8f5ff;
+}
+
+.team-area-dark .mySwiper .swiper-pagination-bullets .swiper-pagination-bullet-active {
+  background-color: #00e1ff;
+  width: 10px;
+  height: 10px;
+}
+
+.team-area:not(.team-area-dark) .mySwiper .swiper-pagination-bullets .swiper-pagination-bullet-active {
+  background-color: #00109c;
+  width: 10px;
+  height: 10px;
+}
+
+.team-area .mySwiper .swiper-card .social-box {
+  transform: scaleY(0);
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  transition: .5s;
+}
+
+.team-area .mySwiper .swiper-card .social-box a {
+  transform: scale(1.5);
+
+  &.website {
+    color: #333;
+  }
+
+  &.whatsapp {
+    color: #076529;
+  }
+
+  &.telegram {
+    color: #0088cc;
+  }
+
+  &.linkedin {
+    color: #0762C8;
+  }
+
+  &.github {
+    color: #333;
+  }
+
+  &.instagram {
+    color: #b80040;
+  }
+
+  &.email {
+    color: #0064b0;
+  }
+}
+
+.team-area-dark .mySwiper .swiper-card .social-box a {
+  &.website {
+    color: #ededed;
+  }
+
+  &.whatsapp {
+    color: #25D366;
+  }
+
+  &.github {
+    color: #fff;
+  }
+}
+
+.team-area .mySwiper .swiper-card:hover .social-box {
+  transform: scaleY(1);
+}
+
+.team-area .mySwiper .swiper-card .member-info-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: .5s;
+}
+
+.team-area .mySwiper .swiper-card .member-info-box h3 {
+  color: #001448;
+  font-size: 18px;
+}
+
+.team-area .mySwiper .swiper-card .member-info-box p {
+  color: #006;
+  font-size: 14px;
+  font-family: poetsen, iransans;
+}
+
+.team-area-dark .mySwiper .swiper-card .member-info-box h3 {
+  color: #fff;
+  font-size: 18px;
+}
+
+.team-area-dark .mySwiper .swiper-card .member-info-box p {
+  color: #eee;
+}
+
+.team-area .mySwiper .swiper-card:hover .member-info-box {
+  transform: translateY(20px);
+}
+
+.team-area .mySwiper .swiper-card .cv-btn {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  background-color: gold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  color: #001448;
+  font-weight: 800;
+  transition: .5s;
+}
+
+.team-area .mySwiper .swiper-card:hover .cv-btn {
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+/* team section: end */
 
 /* footer start */
 .footer-area {
