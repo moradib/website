@@ -49,7 +49,7 @@ const Header = () => {
 
   return (
     <>
-      <section className={`page-header w-full h-[100px] ${isActive ? "active px-16" : ""} flex justify-between items-center px-10 fixed`}>
+      <div className={`page-header w-full md:h-[100px] h-[70px] ${isActive ? "active px-16" : ""} flex justify-between items-center px-4 fixed`}>
         <img src="/images/gbs_logo.png" alt="gbs logo" className='w-[60px] lg:w-[90px] cursor-pointer' onClick={() => router.push("/")} />
         {width > 992 ? (
           <>
@@ -66,10 +66,10 @@ const Header = () => {
           </>
         ) : (
           <>
-            <FaBars className='text-[35px] cursor-pointer' onClick={() => setShowMenu(true)} />
+            <FaBars className='lg:text-[35px] text-[25px] cursor-pointer' onClick={() => setShowMenu(true)} />
           </>
         )}
-      </section>
+      </div>
       {
         (width < 992) ? <ResponsiveMenu handleScroll={scrollToSection} visible={showMenu} handleClose={() => setShowMenu(false)} /> : null
       }

@@ -24425,6 +24425,12 @@ textarea.form-control {
     padding: 20px 20px 20px 60px;
 }
 
+@media (max-width: 400px) {
+    .single-industries {
+        width: 95%;
+    }
+}
+
 .single-industries.right-item,
 .single-industries.right-item:hover::before {
     border-radius: 60px 10px 10px 60px;

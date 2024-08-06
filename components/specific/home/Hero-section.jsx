@@ -14,9 +14,9 @@ const HeroSection = () => {
                         <div className="banner-text mr-0 md:mr-16 flex items-center flex-col">
                             <h1 className='font-extrabold cursor-default' data-aos="fade-down" data-aos-duration="1200" data-aos-delay="200">گونش بیلگی سایار</h1>
                             <div className="flex items-center md:items-start flex-col gap-3 px-5 my-10">
-                                <p className='m-0 md:text-[16px] text-[8px]' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">ارائه انواع خدمات طراحی و توسعه وب سایت های اختصاصی با تکنولوژی های روز دنیا</p>
+                                {width > 992 ? <p className='m-0 md:text-[16px] text-[8px]' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">ارائه انواع خدمات طراحی و توسعه وب سایت های اختصاصی با تکنولوژی های روز دنیا</p> : null}
                                 <p className='m-0 md:text-[16px] text-[8px]' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1300">ایجاد سیستم های هوش مصنوعی برای انواع کسب و کارها</p>
-                                <p className='m-0 md:text-[16px] text-[8px]' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1600">ارائه خدمات سئو و تولید محتوا</p>
+                                {width > 992 ? <p className='m-0 md:text-[16px] text-[8px]' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1600">ارائه خدمات سئو و تولید محتوا</p> : null}
                             </div>
                             <div className="flex-center gap-2" data-aos="fade-down" data-aos-duration="1200"
                                 data-aos-delay="400">
@@ -33,14 +33,15 @@ const HeroSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className="over-shape">
+                <div className="over-shape hidden md:block">
                     <img src="/images/homePage/animate1.png" alt="Image" />
-                    <img src="/images/homePage/animate1.png" alt="Image" />
+                    <img src="/images/homePage/animate1.png" alt="Image"/>
+                    <img src="/images/homePage/animate2.png" alt="Image"/>
                     <img src="/images/homePage/animate2.png" alt="Image" />
-                    <img src="/images/homePage/animate2.png" alt="Image" />
-                    <img src="/images/homePage/animate3.png" alt="Image" />
+                    <img src="/images/homePage/animate3.png" alt="Image"/>
                 </div>
             </div>
+            <div className="bg-gradient-to-b from-blue-900 via-blue-700 to-white w-full h-[100px]"></div>
         </>
     )
 }
